@@ -21,7 +21,7 @@ data are contained in the data set named Bank. xlsx
 
 In this exercise, the following tasks are performed:
 
-a. Writing the logistic regression equation relating x and y for the Community Bank data, use SAS to compute the estimated logistic regression equation:
+#### a. Writing the logistic regression equation relating x and y for the Community Bank data, use SAS to compute the estimated logistic regression equation:
 
 
   From Figure 1 in chart "Analysis of maximum likehood estimates" the logistic regresion would be:
@@ -30,7 +30,7 @@ a. Writing the logistic regression equation relating x and y for the Community B
 
 
 
-b. Estimating the probability that customers with an average monthly balance of $1000 will sign up for direct payroll deposit. 
+#### b. Estimating the probability that customers with an average monthly balance of $1000 will sign up for direct payroll deposit. 
 
 
   First:
@@ -45,7 +45,7 @@ b. Estimating the probability that customers with an average monthly balance of 
   
 
 
-c. Calculating the average monthly balance required to achieve 0.5 probability, supposing Community Bank only wants to contact customers who have a 0.50 or higher probability of signing up for direct payroll deposit. 
+#### c. Calculating the average monthly balance required to achieve 0.5 probability, supposing Community Bank only wants to contact customers who have a 0.50 or higher probability of signing up for direct payroll deposit. 
 
 
 
@@ -66,7 +66,7 @@ p(direct|balance) = e^(-2.6333 +  0.2202*balance) / (1+ e^(-2.6333 +  0.2202*bal
                                                                                balance = 11.9587
                                                                                
                                        
-d. What is the estimated odds ratio? What is the interpretation?
+#### d. What is the estimated odds ratio? What is the interpretation?
 
 
 ### Case: Student Retention Model
