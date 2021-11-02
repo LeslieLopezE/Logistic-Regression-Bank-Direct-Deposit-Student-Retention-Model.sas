@@ -26,7 +26,7 @@ In this exercise, the following tasks are performed:
 
   From Figure 1 in chart "Analysis of maximum likehood estimates" the logistic regresion would be:
 
-  p(direct|balance) = (e^(-2.6333 +  0.2202*balance)) / 1+ (e^(-2.6333 +  0.2202*balance))
+  p(direct|balance) = (e^(-2.6333 +  0.2202 * balance)) / 1+ (e^(-2.6333 +  0.2202 * balance))
 
 
 
