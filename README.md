@@ -4,7 +4,7 @@
 
 Community Bank would like to increase the number of customers who use payroll
 deposit. Management is considering a new sales campaign that will require each branch
-manager to call each customer who does not currently use payoff direct deposit. As an
+manager to call each customer who does not currently use payroll direct deposit. As an
 incentive to sign up for payroll direct deposit, each customer contacted will be offered
 free checking for two years. Because of the time and cost associated with the new
 campaign, management would like to focus their efforts on customers who have the
@@ -21,18 +21,35 @@ data are contained in the data set named Bank. xlsx
 
 In this exercise, the following tasks are performed:
 
-a. Write the logistic regression equation relating x and y.
+a. Writing the logistic regression equation relating x and y for the Community Bank data, use SAS to compute the estimated logistic regression equation:
 
-b. For the Community Bank data, use SAS to compute the estimated logistic regression equation.
+From Figure 1 in chart "Analysis of maximum likehood estimates" the logistic regresion would be:
 
-c. Estimate the probability that customers with an average monthly balance of
-$1000 will sign up for direct payroll deposit. 
+p(direct|balance) = (e^(-2.6333 +  0.2202*balance)) / 1+ (e^(-2.6333 +  0.2202*balance))
 
-d. Suppose Community Bank only wants to contact customers who have a 0.50 or
-higher probability of signing up for direct payroll deposit. What is the average
-monthly balance required to achieve this level of probability?
 
-e. What is the estimated odds ratio? What is the interpretation?
+b. Estimating the probability that customers with an average monthly balance of $1000 will sign up for direct payroll deposit. 
+
+First:
+e^(-2.6333 +  0.2202*balance) = e^(-2.6333 +  0.2202*$1000) = e^(217.567) 
+
+Then:
+p(direct|balance) = e^(217.567) / (1+ e^(217.567))
+p(direct|balance) = 1X10^(-94) = 0
+
+
+c. Calculating the average monthly balance required to achieve 0.5 probability, supposing Community Bank only wants to contact customers who have a 0.50 or higher probability of signing up for direct payroll deposit. 
+
+p(direct|balance) = e^(-2.6333 +  0.2202*balance) / (1+ e^(-2.6333 +  0.2202*balance)) = 0.5
+                                                         e^(-2.6333 +  0.2202*balance) = 0.5 * (1+ e^(-2.6333 +  0.2202*balance))
+                                                     0.5 e^(-2.6333 +  0.2202*balance) = 0.5
+                                                         e^(-2.6333 +  0.2202*balance) = 1
+                                                     ln(e^(-2.6333 +  0.2202*balance)) = ln 1
+                                                             -2.6333 +  0.2202*balance = 0 
+                                                                               balance = 2.6333 / 0.2202
+                                                                               balance = 11.9587
+                                       
+d. What is the estimated odds ratio? What is the interpretation?
 
 
 ### Case: Student Retention Model
