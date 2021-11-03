@@ -35,7 +35,7 @@ In this exercise, the following tasks are performed:
 
   First:
   
-  e^(-2.6333 +  0.2202*balance) = e^(-2.6333 +  0.2202*$1000) = e^(217.567) 
+  e^(-2.6333 +  0.2202 * balance) = e^(-2.6333 +  0.2202 * $1000) = e^(217.567) 
 
   Then:
   
@@ -49,24 +49,29 @@ In this exercise, the following tasks are performed:
 
 
 
-p(direct|balance) = e^(-2.6333 +  0.2202*balance) / (1+ e^(-2.6333 +  0.2202*balance)) = 0.5
+p(direct|balance) = e^(-2.6333 +  0.2202 * balance) / (1+ e^(-2.6333 +  0.2202 * balance)) = 0.5
 
-                                                         e^(-2.6333 +  0.2202*balance) = 0.5 * (1+ e^(-2.6333 +  0.2202*balance))
+                                                         e^(-2.6333 +  0.2202 * balance) = 0.5 * (1+ e^(-2.6333 +  0.2202 * balance))
                                                          
-                                                     0.5 e^(-2.6333 +  0.2202*balance) = 0.5
+                                                     0.5 e^(-2.6333 +  0.2202 * balance) = 0.5
                                                      
-                                                         e^(-2.6333 +  0.2202*balance) = 1
+                                                         e^(-2.6333 +  0.2202 * balance) = 1
                                                          
-                                                     ln(e^(-2.6333 +  0.2202*balance)) = ln 1
+                                                     ln(e^(-2.6333 +  0.2202 * balance)) = ln 1
                                                      
-                                                             -2.6333 +  0.2202*balance = 0 
+                                                             -2.6333 +  0.2202 * balance = 0 
                                                              
                                                                                balance = 2.6333 / 0.2202
                                                                                
-                                                                               balance = 11.9587
+                                                                               balance = $11.9587
                                                                                
                                        
-#### d. What is the estimated odds ratio? What is the interpretation?
+#### d. Finding the estimated odds ratio and interpreting it
+
+The odds ratio is 1.2463 > 1 , which means that the odds to have a customer with balance of $12.96 sign up for direct payroll deposit is 1.2463 greater than the odds of having a customer with a balance of $11.96.  Thus, a unit increase in the independent variable balance has a positive impact on the probability of
+customer signing up for direct payroll deposit.
+
+Also, the 95% confidence interval for the odds is 1.045 and 1.087.  and does not contain the value of 1, we conclude that Balance has a significant effect on the estimated odds ratio.
 
 
 ### Case: Student Retention Model
