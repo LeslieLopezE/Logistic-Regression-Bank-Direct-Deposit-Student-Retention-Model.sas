@@ -1,6 +1,6 @@
 ## Logistic Regression: Bank Direct Deposit and Student Retention Model
 
-### Case: Bank Direct Deposit
+### Case 1: Bank Direct Deposit
 
 Community Bank would like to increase the number of customers who use payroll
 deposit. Management is considering a new sales campaign that will require each branch
@@ -74,7 +74,7 @@ customer signing up for direct payroll deposit.
 Also, the 95% confidence interval for the odds is 1.045 and 1.087.  and does not contain the value of 1, we conclude that Balance has a significant effect on the estimated odds ratio.
 
 
-### Case: Student Retention Model
+### Case 2: Student Retention Model
 
 Over the past few years the percentage of students who leave Lakeland College at the
 end of the first year has increased. Last year Lakeland started a voluntary one-week
